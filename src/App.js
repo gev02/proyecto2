@@ -1,25 +1,46 @@
-import logo from './logo.svg';
 import './App.css';
+import { Link } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <>
+    <div>
+      <nav
+        style={{
+          borderBottom: "solid 1px",
+          paddingBottom: "1rem",
+        }}
+      >
+        <Link to="/reptiles">Reptiles</Link> |{" "}
+        <Link to="/aves">Aves</Link>
+        <Link to="/mamiferos">Mamíferos</Link>
+      </nav>
+      <h1>Estas son las familias de animales</h1>
     </div>
-  );
-}
+    <br/>
+        <div class="animales">
+          <a href="./aves.html">Aves</a>
+        </div>
 
-export default App;
+        <div class="animales">
+          <a href="./reptiles.html">Reptiles</a>
+        </div>
+
+        <div class="animales">
+          <a href="./mamiferos.html">Mamíferos</a>
+        </div> 
+
+        <div class="animales">
+          <a href="./anfibios.html">Anfibios</a>
+        </div>
+
+        <div class="animales">
+          <a href="./peces.html">Peces</a>
+        </div> 
+        </>
+
+        
+        );
+        }
+
+        export default App;
