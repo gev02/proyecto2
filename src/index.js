@@ -13,10 +13,10 @@ root.render(
   <BrowserRouter>
   <Routes>
     <Route path="/" element={<App />} />
-    <Route path="Reptiles" element={<Reptiles />} />
-    <Route path ="Aves" element = {<Aves />} />
+    <Route path="reptiles" element={<Reptiles />} />
+    <Route path ="aves" element = {<Aves />} />
 
-    <Route path ="Mamíferos" element = {<Mamiferos />} />
+    <Route path ="mamiferos" element = {<Mamiferos />} />
 </Routes>
 </BrowserRouter>
 );
